@@ -79,52 +79,131 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="text-center mb-4">
-            <h1 class="text-primary">Get Started</h1>
-            <p>Fill in your details to get started.</p>
+
+    
+<!-- Get Started -->
+<div id="courses" class="container-xxl courses my-6 py-6 pb-0">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h6 class="text-primary text-uppercase mb-2">Popular Courses</h6>
+            <h1 class="display-6 mb-4">Master Driving with Our Comprehensive Training Programs</h1>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <form id="getStartedForm">
-                    <div class="mb-3">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                    <div class="text-center p-4 pt-0">
+                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">Ksh 12,000</div>
+                        <h5 class="mb-3">Automatic Car Lessons</h5>
+                        <p>Learn to drive automatic cars with ease. Perfect for beginners looking for a smooth experience.</p>
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Beginner</li>
+                            <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>3 Weeks</li>
+                        </ol>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="img/courses-1.jpg" alt="Automatic Car Lessons">
+                        <div class="courses-overlay">
+                            <a class="btn btn-outline-primary border-2" href="#">Read More</a>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                    <div class="text-center p-4 pt-0">
+                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">Ksh 15,000</div>
+                        <h5 class="mb-3">Highway Driving Lessons</h5>
+                        <p>Gain confidence driving on Kenyan highways with practical and safety-focused lessons.</p>
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Intermediate</li>
+                            <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>4 Weeks</li>
+                        </ol>
                     </div>
-                    <button type="button" id="payNow" class="btn btn-primary w-100">Pay Now</button>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="img/courses-2.jpg" alt="Highway Driving Lessons">
+                        <div class="courses-overlay">
+                            <a class="btn btn-outline-primary border-2" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                    <div class="text-center p-4 pt-0">
+                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">Ksh 18,000</div>
+                        <h5 class="mb-3">International Driving Lessons</h5>
+                        <p>Prepare for international driving standards and acquire skills for driving abroad.</p>
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Advanced</li>
+                            <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>6 Weeks</li>
+                        </ol>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="img/courses-3.jpg" alt="International Driving Lessons">
+                        <div class="courses-overlay">
+                            <a class="btn btn-outline-primary border-2" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Courses End -->
+
+
+<!-- Form Start -->
+<div id="start" class="container-xxl ">
+    <div class="text-center mb-4">
+        <h1 class="text-primary">Get Started</h1>
+        <p>Fill in your details to get started.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <form id="getStartedForm" class="needs-validation p-4 bg-light shadow-sm rounded" novalidate>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                    <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                </div>
+                <button type="button" id="payNow" class="btn btn-primary w-100">Pay Now</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Modal for MPesa Payment -->
+<div class="modal fade" id="mpesaModal" tabindex="-1" aria-labelledby="mpesaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mpesaModalLabel">Enter MPesa Number</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="mpesaForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="mpesaNumber" class="form-label">MPesa Phone Number</label>
+                        <input type="tel" class="form-control" id="mpesaNumber" pattern="[0-9]{10}" required>
+                        <div class="invalid-feedback">Please enter a valid 10-digit MPesa number.</div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Confirm Payment</button>
                 </form>
             </div>
         </div>
     </div>
-
-    <!-- Modal for MPesa Payment -->
-    <div class="modal fade" id="mpesaModal" tabindex="-1" aria-labelledby="mpesaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="mpesaModalLabel">Enter MPesa Number</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="mpesaForm">
-                        <div class="mb-3">
-                            <label for="mpesaNumber" class="form-label">MPesa Phone Number</label>
-                            <input type="text" class="form-control" id="mpesaNumber" required>
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">Confirm Payment</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
     
     <!-- Footer Start -->
@@ -186,19 +265,43 @@
 
 
     <script>
-        $(document).ready(function () {
-            // Open MPesa modal when "Pay Now" button is clicked
-            $('#payNow').click(function () {
-                $('#mpesaModal').modal('show');
-            });
+        // Bootstrap validation for the form
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
 
-            // Simulate MPesa payment confirmation
-            $('#mpesaForm').submit(function (e) {
-                e.preventDefault();
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Trigger MPesa modal on Pay Now button click
+        $('#payNow').click(function () {
+            const form = $('#getStartedForm')[0];
+            if (form.checkValidity()) {
+                $('#mpesaModal').modal('show');
+            } else {
+                form.classList.add('was-validated');
+            }
+        });
+
+        // Simulate MPesa payment confirmation
+        $('#mpesaForm').submit(function (e) {
+            e.preventDefault();
+            const mpesaForm = $('#mpesaForm')[0];
+            if (mpesaForm.checkValidity()) {
                 alert('Payment confirmed!');
                 $('#mpesaModal').modal('hide');
                 window.location.href = 'login.html'; // Redirect to login page
-            });
+            } else {
+                mpesaForm.classList.add('was-validated');
+            }
         });
     </script>
 
