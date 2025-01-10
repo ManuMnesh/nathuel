@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nathuel Driving and Computer College</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<body>
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small> Nairobi, Kenya</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 08.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+254 706564014</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0"><i class="fa fa-car text-primary me-2"></i>Nathuel Driving College</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="text-center mb-4">
+            <h1 class="text-primary">Get Started</h1>
+            <p>Fill in your details to get started.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form id="getStartedForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <button type="button" id="payNow" class="btn btn-primary w-100">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for MPesa Payment -->
+    <div class="modal fade" id="mpesaModal" tabindex="-1" aria-labelledby="mpesaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mpesaModalLabel">Enter MPesa Number</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="mpesaForm">
+                        <div class="mb-3">
+                            <label for="mpesaNumber" class="form-label">MPesa Phone Number</label>
+                            <input type="text" class="form-control" id="mpesaNumber" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Confirm Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                    <h2 class="text-primary mb-4"><i class="fa fa-car text-white me-2"></i>Nathuel Driving College</h2>
+                 
+                
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Nairobi, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-building" ></i> Mon - Fri : 08.00 AM - 09.00 PM</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@nathuel.online</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 706564014</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Follow Us</h4>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; 2025 <a href="#">Nathuel Driving and Computer College</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Open MPesa modal when "Pay Now" button is clicked
+            $('#payNow').click(function () {
+                $('#mpesaModal').modal('show');
+            });
+
+            // Simulate MPesa payment confirmation
+            $('#mpesaForm').submit(function (e) {
+                e.preventDefault();
+                alert('Payment confirmed!');
+                $('#mpesaModal').modal('hide');
+                window.location.href = 'login.html'; // Redirect to login page
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
